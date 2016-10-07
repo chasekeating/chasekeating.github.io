@@ -1,0 +1,127 @@
+body {
+                margin: 0 auto;
+                max-width: 50em;
+                font-family: Raleway;
+                line-height: 1.5;
+                padding: 4em 1em;
+                color: #555;
+            }
+            
+            h2 {
+                margin-top: 1em;
+                padding-top: 1em;
+            }
+            
+            h1,
+            h2,
+            strong {
+                color: #333;
+            }
+            
+            code,
+            pre {
+                background: #eee;
+            }
+            
+            .container {
+                margin: 0 auto;
+                border: black 1px dotted;
+                /padding: 10;
+            }
+            
+            li {
+                display: inline;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                list-style-type: none;
+                padding: 5;
+                background-color: white;
+                box-shadow: 0 0 10px black;
+                margin: 0 auto;
+            }
+            
+            header {
+                background-color: #2196F3;
+                background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+                /opacity: 0.5;
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                line-height: 1.2;
+                padding: 10vw 2em;
+                text-align: center;
+                box-shadow: 0 0 10px black;
+            }
+            
+            h1 {
+                /text-transform: uppercase;
+            }
+            
+            header > h1 {
+                border: 1px
+            }
+            
+            .pre {
+                padding: 1em;
+                border-bottom: 1px solid #d8dee9;
+                color: rgba(0, 0, 0, 0.75);
+                /border: 1px solid #69c;
+                text-align: center;
+                box-shadow: 0 0 0.01px black;
+            }
+            
+            .pre:hover {
+                color: white;
+                background-color: grey;
+            }
+            
+            #h1container {
+                background-color: white;
+                padding: 10;
+                /border-radius: 10px;
+                box-shadow: 0 0 10px black;
+            }
+            
+            a {
+                display: block;
+                color: black;
+                text-transform: uppercase;
+                font-family: monospace;
+                text-decoration: none;
+            }
+            
+            #assignments h1 {
+                font-size: 1em;
+                text-align: center;
+                border-bottom: 1px black solid;
+                width: 25%;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            footer {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.80);
+                font-family: monospace;
+                padding: 10;
+            }
+            
+            ul li {
+                text-align: center;
+                display: inline-block;
+            }
+            
+            nav {
+                text-align: center;
+            }
+            
+            li:hover {
+                background-color: grey;
+            }
+            
+            @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+                * {
+                    background-color: black
+                }
+            }
