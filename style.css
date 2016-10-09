@@ -33,7 +33,7 @@ li {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   list-style-type: none;
-  padding: 5;
+  padding: 5px;
   background-color: white;
   box-shadow: 0 0 10px black;
   margin: 0 auto;
