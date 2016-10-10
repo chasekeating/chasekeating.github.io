@@ -1,7 +1,8 @@
 body {
   margin: 0 auto;
   max-width: 50em;
-  font-family: Raleway;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 100;
   line-height: 1.5;
   padding: 4em 1em;
   color: #555;
