@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#Canvas | Digital Marketing Solutions</title>
+    <meta name="description" content="Website Coming Soon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="For marketers">
+    <meta property="og:description" content="Website Coming Soon">
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ef3b68">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="assets/vendor.0d1f625c.css" rel="stylesheet"/>
+    <link href="assets/styles.5a6dc9eb.css" rel="stylesheet"/>
+
+    <script>
+        //<![CDATA[
+
+        window.loggedIn = false;
+        window.isManager = false;
+        window.isInfluencer = false;
+        window.isBrand = false;
+        window.s3 = { bucket: "hashtagpaid-new" };
+
+        //]]>
+    </script>
+    
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9PKV3WPRo99LA06JnlY-uDeADv7ccsHE&v=3&libraries=places"></script>
+
+    <!--<script type="text/javascript" src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.2d8fe59b.js"></script>
+    <script type="text/javascript" src="assets/bootstrapvendor.5fe0ebb5.js"></script>
+    <script type="text/javascript" src="assets/application.4f4308f6.js"></script>
+
+    <script id="flash_template" type="text/html">
+        <div class="flash" data-role="alert">
+            <div class="flash-inner">
+                <div class="flash-type float-left"></div>
+                <div class="flash-message"></div>
+                <div class="flash-close float-right">
+                    <a><i class="zmdi zmdi-close"></i></a>
+                </div>
+            </div>
+        </div>
+    </script>
+</head>
+
+<body data-controller="marketers" data-action="index" class="index" data-spy="scroll" data-target="#menu-block" data-offset="140">
+
+<main class="main marketers index">
+    <div class="sticky-banner__top hidden-sm-down">
+        <div class="banner navbar-inverse bg-secondary">
+            <div class="banner__content text-right">
+                <p class="hidden-sm-down">Get branded content and sponsored posts from influencers—at scale</p>
+                <a class="btn btn-nav-primary" role="button" href="/rfp">Request a Consultation</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="sticky-banner__btm hidden-md-up">
+        <div class="banner navbar-inverse bg-secondary">
+            <div class="banner__content text-right">
+                <p class="hidden-sm-down">Get branded content and sponsored posts from influencers—at scale</p>
+                <a class="btn btn-nav-primary" role="button" href="/rfp">Request a Consultation</a>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-toggleable-md">
+        <div class="nav_top-bar">
+            <button class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbardropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="277" height="311" viewBox="0 0 277 311">
+                <title>
+                    paid-logo-black
+                </title>
+                <path d="M277 143.022V84.03h-45.16L251.138.13h-58.55l-19.3 83.9h-37.282L155.304.13H96.622l-19.298 83.9H19.692v58.992h44.11l-8.533 36.706H0v58.99h41.747L24.943 310.82h58.55l16.805-72.1h37.283l-16.803 72.1h58.55l16.805-72.1h61.176v-58.992h-47.654l8.533-36.706H277zm-125.897 36.706H113.82l8.533-36.706h37.283l-8.533 36.706z" fill="#33353A" fill-rule="evenodd"></path>
+            </svg>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbardropdown">
+            <ul class="navbar-nav mr-auto">
+               <!-- <li class="nav-item">
+                    <a class="nav-link" href="/marketers">Marketers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/marketers/recent-collaborations">Our work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/marketers/how-it-works">How it works</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.voxdigital.ca">Vox Digital</a>
+                </li>
+            </ul>
+            <!--<a class="nav-link mr-3" href="/login">Log in</a>-->
+            <a class="btn btn-nav-secondary" target="_blank" href="https://www.voxdigital.ca/contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <script>
+        //<![CDATA[
+
+        header.landingPages.mobileNav();
+        header.landingPages.stickyBanner();
+
+        //]]>
+    </script>
+
+
+    <section class="container">
+        <div class="col-lg-7 intro__content px-0 py-8 py-md-10 pull-left-desktop">
+            <img src="assets/logo.png" alt="Canvas Logo" height="170" width="205">
+
+            <!--<h5 class="display-1">Reach a larger audience</h5>-->
+            <p>Supporting collaborations on all networks.</p>
+
+            <a class="btn btn-nav-primary" role="button" href="/brands/new">Let's Talk</a>
+        </div>
+    </section>
+
+    <section class="container-fluid marketing-banner px-0">
+        <img src="assets/marketers/collage-std.png" srcset="assets/marketers/collage-ret.png">
+    </section>
+
+    <section class="container marketing-content">
+        <div class="col-lg-6 intro__content px-0 py-8 py-md-10 pull-left-desktop">
+            <h1>Our Goal</h1>
+            <h5 class="display-1"></h5>
+            <p>To provide the highest quality digital media solutions online.</p>
+        </div>
+
+        <div class="service">
+            <div class="service__influencer mb-6 mb-md-8 bg-lightest-gray">
+                <div class="service__influencer-text">
+                    <h3>Brand Interactions</h3>
+                    <h5 class="display-1">Let’s help you reach more</h5>
+                    <p>
+                        Distribute your message through a trusted voice by having our team generate a solid marketing strategy for your product or service!
+                    </p>
+                </div>
+            </div>
+
+            <div class="service__branded mb-6 mb-md-8 bg-lightest-gray">
+                <div class="service__branded-text">
+                    <h3>Photography</h3>
+                    <h5 class="display-1">Unlimited branded content</h5>
+                    <p>
+                        Leverage the creativity of our photographers to create authentic and engaging content for your brand’s owned and operated channels.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service__native bg-lightest-gray">
+                <div class="service__native-text">
+                    <h3>Website / Application Development</h3>
+                    <h5 class="display-1">Native amplification</h5>
+                    <p>
+                        Maximize the impact of your online presence with a high quality mobile responsive website or application.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 intro__content px-0 py-8 py-md-10 pull-left-desktop">
+            <h1>Trusted by the smartest businesses</h1>
+            <h5 class="display-1">Hundreds of brands across all industries
+            </h5>
+            <p>Connecting them with our community of influencers and marketers.</p>
+        </div>
+
+       <!-- <div class="row home__testimonials">
+            <div class="col-lg-4 pb-2">
+                <blockquote class="home__testimonials-quote">
+                    <h5 class="text-white font-weight-normal">
+                        “I love how simple it is to make things happen through #paid. Communication, search, payment—it’s all easy to do and in one place.”
+                    </h5>
+                    <footer class="home__testimonials-quote-footer">
+                        <span class="text-white">Ali Murphy | AirBnB</span><br>
+                        Influencer &amp; Content Manager
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-4 pb-2">
+                <blockquote class="home__testimonials-quote">
+                    <h5 class="text-white font-weight-normal">
+                        “#paid’s automation and artificial intelligence made the influencer selection and management of our SVEDKA vodka program completely turn-key.”
+                    </h5>
+                    <footer class="home__testimonials-quote-footer">
+                        <span class="text-white">Amin Todai | OneMethod</span><br>
+                        President &amp; Chief Creative Officer
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-4 pb-2">
+                <blockquote class="home__testimonials-quote">
+                    <h5 class="text-white font-weight-normal">
+                        “#paid’s influencers inspire millions of people with their creative and organic branded content.”
+                    </h5>
+                    <footer class="home__testimonials-quote-footer">
+                        <span class="text-white">Cory Debacker | Shopify</span><br>
+                        Shopify Plus &amp; VIP Engagement Manager
+                    </footer>
+                </blockquote>
+            </div>
+        </div>-->
+
+        <div class="col-lg-6 intro__content px-0 py-8 py-md-10 pull-left-desktop">
+            <h1>We’re revolutionizing marketing</h1>
+            <h5 class="display-1">With the help of the world's leading brands</h5>
+        </div>
+
+        <div class="row logo-list">
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Coca Cola" src="/assets/brand-logos-grey/logo-coca-cola.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Microsoft" src="/assets/brand-logos-grey/logo-microsoft.png" style="max-width: 50%;">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Audi" src="/assets/brand-logos-grey/logo-audi.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Corona" src="/assets/brand-logos-grey/logo-corona.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="eBay" src="/assets/brand-logos-grey/logo-ebay.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Subway" src="/assets/brand-logos-grey/logo-subway.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="PayPal" src="/assets/brand-logos-grey/logo-paypal.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Sony" src="/assets/brand-logos-grey/logo-sony.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="LG" src="/assets/brand-logos-grey/logo-lg.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Budweiser" src="/assets/brand-logos-grey/logo-budweiser.png" style="max-width: 50%;">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Etsy" src="/assets/brand-logos-grey/logo-etsy.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Orville" src="/assets/brand-logos-grey/logo-orville.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Chevrolet" src="/assets/brand-logos-grey/logo-chevrolet.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Ikea" src="/assets/brand-logos-grey/logo-ikea.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Sephora" src="/assets/brand-logos-grey/logo-sephora.png" style="max-width: 50%;">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="KFC" src="/assets/brand-logos-grey/logo-kfc.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Unilever" src="/assets/brand-logos-grey/logo-unilever.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Mastercard" src="/assets/brand-logos-grey/logo-mastercard.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="AirBnB" src="/assets/brand-logos-grey/logo-airbnb.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Universal" src="/assets/brand-logos-grey/logo-universal.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Mondelez" src="/assets/brand-logos-grey/logo-mondelez.png" style="max-width: 50%;">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Canon" src="/assets/brand-logos-grey/logo-canon.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Visa" src="/assets/brand-logos-grey/logo-visa.png">
+            </div>
+            <div class="col-lg-2 col-4 grid-square">
+                <img alt="Toyota" src="/assets/brand-logos-grey/logo-toyota.png" style="max-width: 50%;">
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 intro__content px-0 py-8 py-md-10 pull-left-desktop">
+            <h1>Not quite ready to sign up yet?</h1>
+            <h5 class="display-1">Check out some of our awesome work</h5>
+        </div>
+        <div class="row cta-list">
+            <div class="col-lg-6 col-12 grid-square">
+                <h4>Case Studies</h4>
+                <h6 class="display-1">Check out our marketing case studies to learn how our team has delivered impressive results for the world’s leading brands.</h6>
+                <a class="btn btn-nav-secondary" target="_blank" href="https://www.voxdigital.ca/work">Read our case studies</a>
+            </div>
+           <!-- <div class="col-lg-6 col-12 grid-square">
+                <h4>Get our free e-books</h4>
+                <h6 class="display-1">We’ve created Influencer Marketing e-books for marketers, agency teams, and anybody curious about working with our amazing influencers.</h6>
+                <a class="btn btn-nav-secondary" target="_blank" href="http://blog.hashtagpaid.com/free-e-books">Get the e-books</a>
+            </div>-->
+        </div>
+    </section>
+
+    <div class="wrapper-3 container">
+        <div class="col-lg-6 intro__btm-content py-8 py-md-10">
+            <h2 class="display-3 h1">Welcome To Canvas</h2>
+            <h5 class="display-2">Welcome to better connections.</h5>
+
+            <a class="btn btn-primary" href="/rfp" role="button">Get started</a>
+        </div>
+    </div>
+
+
+    <div class = "sticky-banner__btm hidden-md-up">
+        <div class="banner navbar-inverse bg-secondary">
+            <div class="banner__content text-right">
+                <p class="hidden-sm-down">Get branded content and sponsored posts from influencers—at scale</p>
+                <a class="btn btn-nav-primary" role="button" href="/rfp">Request a Consultation</a>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+</main>
+<!--<div class="container">
+    <footer>
+        <div class="row footer-links pl-0">
+            <div class = "col-md-9">
+                <div class="row">
+                    <div class="col-md-2 pl-md-0">
+                        <p class="title font-weight-bold">#paid</p>
+
+                        <ul>
+                            <li>
+                                <a href="/about" id="about_ref">About us</a>
+                            </li>
+                            <li>
+                                <a href="/about#careers" id="careers_ref">Careers</a>
+                            </li>
+                            <li>
+                                <a href="http://blog.hashtagpaid.com/" target="_blank" id="blog_ref">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="title font-weight-bold">I am a...</p>
+
+                        <ul>
+                            <li>
+                                <a href="/marketers" id="marketers_index_ref">Marketer</a>
+                            </li>
+                            <li>
+                                <a href="/creators" id="creators_index_ref">Creator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p class="title font-weight-bold">Support</p>
+
+                        <ul>
+                            <li>
+                                <a href="/faq" id="faq_ref">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="/terms" id="terms_ref">Terms</a>
+                            </li>
+                            <li>
+                                <a href="/privacy" id="privacy_ref">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="column">
+                    <p class="title font-weight-bold">Contact</p>
+
+                    <ul class="footer-icons">
+                        <li>
+                            <a class="telephone" href="tel:18447243100">1-844-PAID-100</a>
+                        </li>
+                        <li>
+                            <a class="email" href="mailto:hello@hashtagpaid.com">hello@hashtagpaid.com</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com/hashtagpaid">
+                                <img class = "social-icon" src="/assets/insta-icon.svg" />
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/hashtagpaid">
+                                <img class = "social-icon" src = "/assets/facebook-icon.svg" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/hashtagpaid">
+                                <img class = "social-icon" src="/assets/twitter-icon.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <div class="row">
+                <div class="col-md-6 footer-base__logo pl-md-0">
+                    <p>
+                        <span class="paid-hash-logo"><img src="/assets/paid_logos/paid-logo.png"></span>
+                        &copy; 2018 Hashtag Paid Inc.
+                    </p>
+                </div>
+                <div class="col-md-6 footer-base__trademark pr-0">
+                    <p>#paid is a trademark of Hashtag Paid Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>-->
+
+
+<script>
+    //<![CDATA[
+
+    //]]>
+</script>
+</body>
+</html>
